@@ -1,17 +1,17 @@
 using UnityEngine;
 using static UnityEngine.UIElements.UxmlAttributeDescription;
 
-public class orientCtrl : MonoBehaviour
+public class Scene1orientCtrl : MonoBehaviour
 
 {
     [SerializeField] GameObject orientLkt;
-    [SerializeField] Vector3 startPosition;
-    [SerializeField] Vector3 targetPosition;
-    [SerializeField] Vector3 endPosition;
+    /*[SerializeField]*/Vector3 startPosition;
+    /*[SerializeField]*/Vector3 targetPosition;
+    /*[SerializeField]*/Vector3 endPosition;
     [SerializeField] float smoothTime = 0.5f;
     [SerializeField] float stoppingDistance = 0.1f;
-    [SerializeField] Vector3 currentTarget;
-    [SerializeField] Vector3 currentVelocity = Vector3.zero;
+    /*[SerializeField]*/Vector3 currentTarget;
+    /*[SerializeField]*/Vector3 currentVelocity = Vector3.zero;
     void Start()
     {
         startPosition = orientLkt.transform.position;

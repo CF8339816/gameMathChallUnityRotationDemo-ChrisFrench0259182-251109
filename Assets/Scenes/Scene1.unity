@@ -293,7 +293,8 @@ MonoBehaviour:
   Player: {fileID: 334346134}
   TarLocEne: {x: 0, y: 0, z: 0}
   TarLocOri: {x: 0, y: 0, z: 0}
-  CurrLoc: {x: 0, y: 0, z: 0}
+  pCurrLoc: {x: 0, y: 0, z: 0}
+  SlerpEase: 1
 --- !u!65 &334346136
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -377,7 +378,7 @@ Transform:
   m_GameObject: {fileID: 334346134}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -642,13 +643,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699189704}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.22135219, w: 0.9751939}
-  m_LocalPosition: {x: -0.45, y: -0.030000001, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.41634002, w: 0.909209}
+  m_LocalPosition: {x: 0.554, y: -0.030000001, z: 0}
   m_LocalScale: {x: 0.36562505, y: 0.5399528, z: 0.2375}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 334346139}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -25.577}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 49.207}
 --- !u!65 &699189706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -875,7 +876,7 @@ Transform:
   m_GameObject: {fileID: 890542692}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.92, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -893,6 +894,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1105a29dbb98fc498809904a780db7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  orientLkt: {fileID: 890542692}
+  smoothTime: 0.5
+  stoppingDistance: 0.1
 --- !u!1 &947565337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1108,7 @@ Transform:
   m_GameObject: {fileID: 1775894032}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.99, y: 0.5, z: -0.32}
+  m_LocalPosition: {x: 8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1123,13 +1127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemylooket: {fileID: 1775894032}
-  startPosition: {x: 0, y: 0, z: 0}
-  targetPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
   smoothTime: 0.5
   stoppingDistance: 0.1
-  currentTarget: {x: 0, y: 0, z: 0}
-  currentVelocity: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
