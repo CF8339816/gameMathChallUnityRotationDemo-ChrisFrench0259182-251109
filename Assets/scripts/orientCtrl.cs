@@ -1,7 +1,7 @@
 using UnityEngine;
 using static UnityEngine.UIElements.UxmlAttributeDescription;
 
-public class smoothDamp : MonoBehaviour
+public class orientCtrl : MonoBehaviour
 
 {
     [SerializeField] GameObject orientLkt;
@@ -15,8 +15,8 @@ public class smoothDamp : MonoBehaviour
     void Start()
     {
         startPosition = orientLkt.transform.position;
-        targetPosition = new Vector3(0, 0, 10);
-        endPosition = new Vector3(0, 0, 0);
+        targetPosition = new Vector3(0, 5,5);
+        endPosition = new Vector3(0, 5, -5);
     }
 
     // Update is called once per frame

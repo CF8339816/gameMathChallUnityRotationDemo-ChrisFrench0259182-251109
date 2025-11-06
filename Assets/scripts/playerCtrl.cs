@@ -15,9 +15,8 @@ public class playerCtrl : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        TarLocEne = TarEne.transform.position;
-        TarLocOri = TarOri.transform.position;
-
+      
+        CurrLoc = Player.transform.position;
 
 
 
@@ -26,9 +25,17 @@ public class playerCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        TarLocEne = TarEne.transform.position;
+        TarLocOri = TarOri.transform.position;
+        // 
+        //Vector3 enemyDir = TarLocEne - CurrLoc;
+        //Quaternion enemyVect = Quaternion.LookRotation(enemyDir);
 
-       transform.LookAt(TarLocEne);
+        //transform.rotation = enemyVect;
 
+
+        transform.LookAt(TarLocEne);
+        transform.LookAt(TarLocOri);
 
 
 

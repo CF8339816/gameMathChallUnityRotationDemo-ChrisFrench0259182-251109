@@ -1,7 +1,7 @@
 using UnityEngine;
 using static UnityEngine.UIElements.UxmlAttributeDescription;
 
-public class smoothDamp : MonoBehaviour
+public class enemyMove : MonoBehaviour
 
 {
     [SerializeField] GameObject Enemylooket;
@@ -15,7 +15,7 @@ public class smoothDamp : MonoBehaviour
     void Start()
     {
         startPosition = Enemylooket.transform.position;
-        targetPosition = new Vector3(0, 0, 10);
+        targetPosition = new Vector3(10, 0, 10);
         endPosition = new Vector3(0, 0, 0);
     }
 
