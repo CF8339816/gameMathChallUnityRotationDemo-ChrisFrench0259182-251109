@@ -294,7 +294,7 @@ MonoBehaviour:
   TarLocEne: {x: 0, y: 0, z: 0}
   TarLocOri: {x: 0, y: 0, z: 0}
   pCurrLoc: {x: 0, y: 0, z: 0}
-  SlerpEase: 1
+  SlerpEase: 3
 --- !u!65 &334346136
 BoxCollider:
   m_ObjectHideFlags: 0

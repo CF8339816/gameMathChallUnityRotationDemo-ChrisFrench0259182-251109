@@ -3,11 +3,11 @@ using UnityEngine;
 public class scene2Orbiting : MonoBehaviour
 { 
     [SerializeField] int orbitSpeed = 3;
-    [SerializeField] int deflection= 0;
-    [SerializeField] int rotate = 0;
-   // [SerializeField] GameObject centerTarget;
-    [SerializeField] GameObject orbiter;
-
+    //[SerializeField] int deflection= 0;
+    //[SerializeField] int rotate = 0;
+    [SerializeField] Transform centTar;
+    //[SerializeField] GameObject orbiter;
+    [SerializeField] Vector3 rotatAxis = Vector3.up;
     //Vector3 startPosition;
 
 void Start()
@@ -20,10 +20,15 @@ void Start()
 // Update is called once per frame
 void Update()
     {
-        
-        //Vector3 facetarget = centerTarget.transform.position;
+        if (centTar != null)
+        {
+          transform.RotateAround(centTar.position, rotatAxis, orbitSpeed * Time.deltaTime);
 
-       // Quaternion myOrbitVector = Quaternion.LookRotation(centerTarget);
+            // Vector3 facetarget = centTar.transform.position;
+            // Quaternion myOrbitVector = Quaternion.LookRotation(facetarget);
+            //transform.rotation = myOrbitVector;
+        }
+    
 
 
 
